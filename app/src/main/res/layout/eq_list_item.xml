@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="eq"
+            type="com.tzw.eq.equtils.AudioTunningEQ" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/ll_eq_param"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/et_gain"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_input"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:text='@={eq.gain+""}'
+                android:textColor="#000000"
+                android:textSize="19sp" />
+
+            <EditText
+                android:id="@+id/et_fc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_input"
+                android:gravity="center"
+                android:inputType="number"
+                android:text='@={eq.fc+""}'
+                android:textColor="#000000"
+                android:textSize="19sp" />
+
+            <EditText
+                android:id="@+id/et_bw"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_input"
+                android:gravity="center"
+                android:inputType="number"
+                android:text='@={eq.bw+""}'
+                android:textColor="#000000"
+                android:textSize="19sp" />
+
+            <Spinner
+                android:id="@+id/spinner_type"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:spinnerMode="dropdown"
+                android:dropDownVerticalOffset="40dp" />
+
+            <CheckBox
+                android:id="@+id/cb_bypass"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:checked="@={eq.bypass}"/>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

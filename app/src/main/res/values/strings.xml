@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">EQ</string>
+    <string name="eq_q">Q</string>
+    <string name="eq_gain">Gain\n(dB)</string>
+    <string name="eq_freq">Fc\n(Hz)</string>
+    <string name="eq_bw">BW\n(Hz)</string>
+    <string name="eq_type">Type</string>
+    <string name="eq_bypass">Bypass</string>
+    <string name="visualize_response">Visualize Response</string>
+    <string name="sample_rate">Sample rate(Hz):</string>
+
+    <string name="visual_static_curve">Visualize Static Characteristic Curve</string>
+    <string name="input_db">Input(dB)</string>
+    <string name="output_db">Output(dB)</string>
+    <string name="threshold">Threshold(dB)</string>
+    <string name="ratio">Ratio</string>
+    <string name="kneewidth">KneeWidth(dB)</string>
+
+    <string-array name="eq_types">
+        <item>peak</item>
+        <item>lowshelf</item>
+        <item>highshelf</item>
+        <item>lowpass</item>
+        <item>highpass</item>
+        <item>bandpass</item>
+        <item>notch</item>
+        <item>allpass</item>
+    </string-array>
+
+</resources>
