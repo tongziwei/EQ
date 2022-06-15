@@ -27,7 +27,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="Compressor"
+        android:text="DRC Static Characteristic"
         android:textAllCaps="false"
         android:onClick="openCompressor"/>
 
